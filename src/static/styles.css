@@ -74,6 +74,47 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* New: participants list styling */
+.participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.participants p {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.participants-list {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.participant-item {
+  background: linear-gradient(90deg, #ffffff, #fbfbff);
+  border: 1px solid #eceff9;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #263238;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+/* Small hint when no participants */
+.participant-item.empty {
+  font-style: italic;
+  color: #757575;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
